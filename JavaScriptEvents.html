@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>JavaScript Events</h1>
+    <p> The Five Basic JavaScript Events.</p>
+
+    <hr>
+
+    <!-- 1. ONCLICK EVENT -->
+     <section>
+        <h2>1. Onclick Event</h2>
+        <p>Executes when the user clicks a button.</p>
+
+        <button onclick="alert('Button clicked')">
+            Click Me
+        </button>
+     </section>
+     <hr>
+
+     <!-- 2. ONDBLCLICK EVENT -->
+      <section>
+        <h2>2. Ondblclick Event</h2>
+        <p> Executes when the user double-clicks an element.</p>
+
+        <button ondbl="alert('Button double-clicked!')">
+            Double Click Me
+        </button>
+      </section>
+
+      <hr>
+
+       <!-- 3. ONMOUSEOVER EVENT -->
+        <section>
+            <h2>3. Onmouseover Event</h2>
+            <p>Executes when the mouse pointer moves over an element.</p>
+            
+            <h3 onmouseover="this.style.color='blue'"
+                onmouseout="this.style.color='black'">
+                Move Your Mouse Over This Heading
+            </h3>
+        </section>
+
+        <hr>
+
+        <!-- 4.ONINPUT EVENT -->
+        <section>
+            <h2>4. Oninput Event</h2>
+            <p>Executes whenever the user enters or changes text.</p>
+            
+            <input type="text"
+                   placeholder="Enter Your Name:"
+                   oninput="document.getElementsById('output').innerHTML = this.value">
+
+            <p id="output"></p>
+        </section>
+
+        <hr>
+
+        <!-- 5. ONCHANGE EVENT -->
+        <section>
+            <h2>5. Onchange Event</h2>
+            <p>Executes when the user changes a selected value.</p>
+
+            <lable>Select Your Course:</lable>
+
+            <select onchange="document.getElementsById('course').innerHTML = this.value">
+                <option value="">Select Course</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+            </select>
+
+            <p id="course"></p>
+        </section>
+
+        <hr>
+        <script src="script.js"></script>
+</body>
+</html>

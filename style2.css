@@ -1,0 +1,67 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: rgb(183, 214, 234);
+    color:rgb(30, 115, 115);
+}
+
+h1, h2 {
+    color:rgb(169, 13, 196);
+}
+section {
+    margin-bottom: 30px;
+}
+/*  1. Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.flex-container div {
+    background-color: rgb(230, 176, 176);
+    padding: 20px;
+}
+
+/*  2. CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-container div {
+    background-color: rgb(230, 176, 176);
+    padding: 20px;
+}
+
+/*  Responsive Design */
+.responsive-container {
+    display: grid;
+    grid-template-columns: repeat(1, 10fr);
+    gap: 10px;
+}
+
+.responsive-container div {
+    background-color: rgb(230, 176, 176);
+    padding: 20px;
+}
+/* 
+/* Tablet */
+@media (max-width: 100px) {
+    .grid-container,
+    .responsive-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Mobile */
+@media (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+.grid-container,
+.responsive-container{
+    grid-template-columns: 1fr;
+}

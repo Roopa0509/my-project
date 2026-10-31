@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>html basics practice</h1>
+        <p>This is a webpage containing html basics</p>
+
+        <nav>
+            <a href="#headings">Heading</a>
+            <a href="#text">Text Formatting</a>
+            <a href="#lists">Lists</a>
+            <a href="#links">Links</a>
+            <a href="#images">Images</a>
+            <a href="#tables">Tables</a>
+            <a href="#forms">Forms</a>
+            <a href="#semantic">Semantic HTML</a>
+            <a href="#media">Multimedia</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- 1.HEADING TAGS -->
+    <section id="headings">
+        <h2>1. Heading Tags</h2>
+
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </section>
+
+    <hr>
+
+    <!-- 2. PARAGRAPH, HR AND BR -->
+    <section id="paragraph">
+        <h2> 2.Paragraph, Horizontal Rule and Line Break</h2>
+
+        <p> This the first paragraph</p>
+
+        <p>
+            HTML stands for HyperText Markup Language.
+            It is used to structure content on webpages.
+        </p>
+
+        <hr>
+
+        <p> 
+            First Line of Text.<br>
+            Second Line of Text.<br>
+            Third Line of Text.
+        </p>
+
+        <hr>
+
+        <!-- 3. TEXT FORMATTING -->
+         <section id="text"></section>
+         <h2> 3.Text Formating Tags</h2>
+
+         <p><b> This text is bold.</b></p>
+         <p><strong> This text is important.</strong></p>
+         <p><i> This text is italic.</i></p>
+         <p><u> This text is underlined.</u></p>
+         <p><small> This text is smaller.</small></p>
+         <p><em> This text is emphasized.</em></p>
+         <p><mark> This text is highlighted.</mark></p>
+         <p><del> This text is deleted.</del></p>
+         <p><ins> This text is inserted.</ins></p>
+         <p>Water Formula: H<sub>2</sub>o</p>
+         <p>Mathematics: X<sup>2</sup></p>
+    </section>
+
+    <hr>
+
+    <!-- 4.IMAGES -->
+    <section id="images">
+    <h2> 4.HTML Images</h2>
+
+    <img src="coding.png" alt="google.com" width="500" height="300">
+
+    <hr>
+    <!--fonts-->
+    <h2> 5.Paragraph</h2>
+    <h1 style="font-family:veranda;">This is a heading.</h1>
+    <p style="font-family:courier;">This is a paragraph.</p>
+
+    <!--text size-->
+    <h1 style="font-size: 300%;">This is a heading.</h1>
+    <p style="font-size: 160%;">This is a paragraph.</p>
+
+    <!--text alignment-->
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">centered paragraph</p>
+
+    <!--border color-->
+
+    <h1 style="border:2px soild tomato;">hello world</h1>
+    <h1 style="border:2px soild violet;">hi</h1>
+
+    <!--color values-->
+    <h1 style="background-color:pink;">hi</h1>
+    <h1 style="background-color:red;">hi</h1>
+    <h1 style="background-color:orange;">hi</h1>
+
+    <!--6. LISTS -->
+    <section id="lists">
+        <h2> 6.HTML lists </h2>
+        <h3> Unordered Lists</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>ordered List</h3>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+            <li>Learn JavaScript</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Structures webpage content.</dd>
+
+            <dt>CSS</dt>
+            <dd>styles webpage content.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <!--7. LINKS -->
+    <section id="links">
+        <h2> 7. HTML Links</h2>
+
+        <p>
+            visit
+            <a href="https://www.google.com" target="_blank">
+                google
+            </a>
+        </p>
+        <p>
+            <a href="mailto:example@email.com">Send an email</a>
+        </p>
+        <p>
+            <a href="#forms">Go to the forms section</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <!--8.IMAGES-->
+    <section id="images">
+        <h2> 8. HTML Images</h2>
+
+        <img src="dharani.png"
+        alt="Placeholder image demonstrating the HTML image tag"
+        width="300"
+        height="180"
+        >
+    </section>
+
+    <hr>
+
+    <!-- 9.TABLES -->
+    <section id="tables">
+    <h2> 9. HTML Tables </h2> 
+
+    <table border="1">
+        <caption> Student Details </caption>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+            <th>COURSE</th>
+            <th>MARK</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>DHARANI</td>
+        <td>EEE AI</td>
+        <td>PHYSICS</td>   
+        <td>100</td>
+        </tr>
+    </tbody>
+    </table>
+    </section>
+
+
+
+
+    <hr>
+    
+    <!-- 10.Forms -->
+    <section id="forms">
+    <h2> 10.HTML Forms</h2>
+    <form>
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input
+               type="text"
+               id="fullname"
+               name="fullname" 
+               placeholder="Enter your name"
+               required
+            >
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input
+               type="email"
+               id="email"
+               name="email" 
+               placeholder="Enter your mail"
+               required
+            >
+        </p>
+        <P>
+            <label for="password">Password:</label>
+            <input
+               type="password"
+               id="password"
+               name="password" 
+               placeholder="Enter your password"
+               required
+            >
+        </P>
+
+        <p>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+ 
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <p>
+            <label for="course">Select Course:</label>
+
+            <select id="course" name="course">
+                <option value="">Choose a Course</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+        </p>
+
+        <p>
+            <lable for="address">Address:</lable>
+            <textarea
+                id="address"
+                name="address"
+                rows="4"
+                cols="30"
+                placeholder="Enter your address"
+            ></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms.</label>
+        </p>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </section>
+
+    <hr>
+
+    <!--11. SEMANTIC HTML -->
+       <section id="semantic">
+        <h2> 11. Semantic HTML Elements </h2>
+        <article>
+            <h3>What is semantic HTML?</h3>
+            <p>
+                Semantic HTML uses meaningful elements to describe the purpose of webpage content.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Additional Information</h3>
+            <p>Semantic elements improve page structure and accessibility.</p>
+        </aside>
+      </section>
+
+      <hr>
+      
+      <section id="media">
+        <h2>12. HTML Multimedia</h2>
+
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+       
+        <h3>Video</h3>
+        <video width="400"controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+     <footer>
+        <p>&copy; 2026 HTML Basics Practice. All rights reserved.</p>
+        <a href="#top">Back to Top</a>
+     </footer>
+
+     <hr>
+
+     
+
+      <hr>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color: #ebbfeb;
+}
+
+h1 {
+    color: #1c0b28;
+    font-size: 32px;
+}
+
+p {
+    color: #da0e1c;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+
+header nav {
+    text-align: center;
+ }
+
+header nav a {
+    padding: 20px;
+    text-decoration: none;
+}
+.hero-image{
+    text-align: center;
+}
+
+header nav a {
+    font-weight: bold;
+    font-size: 30px;
+}
+img {
+    width: 500px;
+    height: 500px;
+}
+
+img {
+    border-radius: 10%;
+}
+.Certificate-image {
+    text-align: center;
+}
+nav {
+    text-align:center;
+}
+nav a {
+    text-decoration: none;
+}
+eader {
+    height: 150px;
+    padding: 20px 40px;
+}
+eader {
+    height: 150px;
+    padding: 20px 40px;
+
+
